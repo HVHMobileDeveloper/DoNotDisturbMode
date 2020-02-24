@@ -1,18 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="50dp"
     tools:context=".MainActivity">
+        <TextView
+            android:id="@+id/tv_stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:padding="10dp"
+            />
+        <Button
+            android:id="@+id/btn_none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Interruption Filter None (ON DoD)"
+            />
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Interruption Filter All (OFF DoD)"
+            />
+        <Button
+            android:id="@+id/btn_priority"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Interruption Filter Priority"
+            />
+        <Button
+            android:id="@+id/btn_alarms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Interruption Filter Alarms"
+            />
+</LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
